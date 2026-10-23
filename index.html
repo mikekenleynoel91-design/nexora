@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050816">
+<title>Nexora</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:Arial,sans-serif;color:#fff;background:radial-gradient(ellipse at top,#123b78 0%,#071329 42%,#03050d 80%);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 15% 25%,#168bff35,transparent 30%),radial-gradient(circle at 85% 65%,#6d28d933,transparent 32%);animation:glow 7s ease-in-out infinite alternate}
+@keyframes glow{to{filter:hue-rotate(35deg);opacity:.6}}
+header{padding:22px 20px;border-bottom:1px solid #4e8bff35;display:flex;align-items:center;justify-content:space-between;position:relative}
+.logo{font-size:28px;font-weight:800;letter-spacing:2px;color:#fff}.logo span{color:#49a5ff}
+.status{font-size:12px;color:#7cf5c3;border:1px solid #2be6a055;padding:7px 10px;border-radius:20px}
+main{position:relative;max-width:850px;margin:auto;padding:65px 22px}
+.tag{color:#65b7ff;letter-spacing:3px;font-size:12px;font-weight:bold}
+h1{font-size:clamp(46px,11vw,82px);line-height:1.02;margin:20px 0;background:linear-gradient(100deg,#fff,#74baff,#9d8cff);background-clip:text;-webkit-background-clip:text;color:transparent}
+.intro{font-size:17px;line-height:1.7;color:#b9c9e6;max-width:530px}
+.panel{margin-top:36px;padding:25px;border:1px solid #579dff50;border-radius:22px;background:#0b1733b8;box-shadow:0 0 40px #167bff16;backdrop-filter:blur(12px)}
+.panel h2{margin-top:0;font-size:21px}
+button{border:0;border-radius:12px;padding:14px 20px;font-size:15px;font-weight:bold;cursor:pointer;background:linear-gradient(100deg,#168bff,#6558f5);color:white;box-shadow:0 5px 25px #167bff35}
+button:active{transform:scale(.98)}
+#message{color:#a9c8f7;margin-bottom:0}
+footer{text-align:center;padding:25px;color:#7184a6;font-size:12px}
+</style>
+</head>
+<body>
+<header><div class="logo">NEX<span>ORA</span></div><div class="status">● En ligne</div></header>
+<main>
+<div class="tag">BIENVENUE DANS LE FUTUR</div>
+<h1>Explorez<br>l'univers Nexora.</h1>
+<p class="intro">Une nouvelle expérience numérique. Découvrez un espace moderne, lumineux et conçu pour vos idées.</p>
+<section class="panel">
+<h2>✨ Votre espace Nexora</h2>
+<p class="intro">Votre aventure commence ici. Appuyez sur le bouton pour découvrir votre espace.</p>
+<button onclick="document.getElementById('message').textContent='Bienvenue sur Nexora ! Votre espace est prêt à être exploré.'">Découvrir Nexora ↗</button>
+<p id="message" aria-live="polite"></p>
+</section>
+</main>
+<footer>© 2026 Nexora · Votre univers numérique</footer>
+</body>
+  </html>
